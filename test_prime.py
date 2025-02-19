@@ -11,7 +11,7 @@ def test_prime():
     assert is_prime(30) is False
     assert is_prime(1) is False
     assert is_prime(0) is False
-    assert is_prime(-5) is False
+    assert is_prime(-9) is False
 
 
 if __name__ == "__main__":

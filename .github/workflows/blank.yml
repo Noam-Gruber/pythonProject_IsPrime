@@ -15,7 +15,7 @@ jobs:
           python-version: '3.8'
 
       - name: Install Dependencies
-        run: pip install pytest
+        run: pip install pytest, flake8
 
       - name: Run linting
         run: flake8 prime.py

@@ -15,10 +15,13 @@ jobs:
           python-version: '3.8'
 
       - name: Install Dependencies
-        run: pip install pytest flake8
+        run: pip install pytest flake8 mypy
 
       - name: Run linting
         run: flake8 prime.py
+
+      - name: Run mypy
+        run: mypy prime.py
       
       - name: Run Tests
         run: pytest

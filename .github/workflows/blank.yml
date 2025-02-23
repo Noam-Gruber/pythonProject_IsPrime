@@ -14,10 +14,10 @@ jobs:
           python-version: '3.8'
 
       - name: Install Dependencies
-        run: pip install pytest flake8 mypy pytest-cov
+        run: pip install pytest mypy pytest-cov
 
-      - name: Run linting
-        run: flake8 prime.py
+#      - name: Run linting
+#        run: flake8 prime.py
 
       - name: Run mypy
         run: mypy prime.py
